@@ -11,13 +11,13 @@ x () {
 
 create_content () {
     local FILE="$1"
-    x "echo a >> ${FILE}"
+    x "echo a >>     ${FILE}"
 }
 
 create_commit () {
     local ARG="$1"
     create_content "$ARG"
-    x "git add $ARG"
+    x "git add       $ARG"
     x "git commit -m $ARG"
 }
 
